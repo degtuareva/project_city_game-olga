@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap");
+
+html {
+  --primary-color: #161f6d;
+  --secondary-color: #00abe1;
+}
+html,
+body {
+  margin: auto;
+  cursor: pointer;
+}
+/*1em=20px*/
+body {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-family: "Luckiest Guy", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1em;
+  text-wrap: balance;
+  letter-spacing: 0.15em;
+}
+header {
+  margin: auto;
+  padding: auto;
+  font-size: 40px;
+}
+
+.button_inactive{
+  background-color: green !important;
+  color: white !important;
+}
+
+#second_header{
+  display: none;
+  text-align: center;
+}
+
+.display_block{
+  display: block !important;
+}
+
+.hide_block{
+  display: none !important;
+}
+
+.user_name_input{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 5vh;
+  width: 225px;
+}
+.name_error{
+  visibility: hidden;
+  color: red;
+}
+
+.display_class{
+  visibility: initial !important;
+}
+
+.button-start{
+ text-transform: uppercase; 
+ text-align: center;
+ padding: 20px;
+}
+.button_submit{
+  margin-top: 20px;
+}
+.custom-made-button{
+  background-color:hsl(178, 60%, 48%);
+  color:hsl(199,33%,15%);
+  border:0;
+  border-radius:1em;
+  padding: 0.5em;
+  font-size: 1.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 1;
+  cursor: pointer;
+  box-shadow: 0 0.35em 0 0 hsl(178, 60%, 48%,0.5);
+  text-align: center;
+  width: 200px;
+  text-wrap: balance;
+  display: block;
+}
+.custom-made-button:active,
+.custom-made-button:focus-visible{
+  transform: translateY(0.35em);
+  box-shadow:none;
+}
+#second_div{
+  display: none;
+}
+#step_announce{
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+}
+#congrats, #score{
+  display: block;
+  text-align: center;
+}
+#last_city{
+  display: flex;
+  text-align: center;
+  margin-top: 30px;
+  justify-content: center;
+}
+.city_block{
+  display: block; 
+  margin-top: 5vh;
+}
+.custom-made{
+  height: 50px;
+  border:3px solid #242424;
+  color:#242424;
+  background-color:#f0f0f0;
+  font-family: inherit;
+  letter-spacing: inherit;
+  font-size: 1.2em;
+
+  filter: drop-shadow(5px 5px 0px #242424);
+  cursor:pointer;
+  text-align: center;
+}
+.custom-made:active{
+  position: relative;
+  bottom: -8px;
+  right: -8px;
+  filter: drop-shadow(0px 0px 0px #242424);
+  background-color:#e0e0e0;
+}
+.city_field{
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+}
+.user_result_block{
+  display: flex;
+  justify-content: space-between;
+  padding: 15vh 15vw;
+}
+#first_name_display, #second_name_display, #first_name_count, #second_name_count{
+  display: block;
+  margin-bottom: 10px;
+}
+.custom-made1{
+  width: 160px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+  background: #ca7e14;
+  /* box-shadow: 0 0 0 0 rgba(#517945, 0.5); */
+  animation: pulse 5s infinite;
+  border: none;
+  cursor:pointer;
+  font-family: inherit;
+  letter-spacing: inherit;
+  text-align: center;
+  margin: 20px auto;
+  display: block;
+  /* color: #fff; */
+}
+.custom-made1:active{
+  position: relative;
+  bottom: -8px;
+  right: -8px;
+  filter: drop-shadow(0px 0px 0px #242424);
+  background-color:#e0e0e0;
+}
+.custom-made1:hover{
+  animation:none;
+}
+#third_div{
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+}
+@keyframes pulse{
+  0%{
+    transform: scale(.9);
+  }
+  50%{
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(#5a99d4,0);
+  }
+  100%{
+    transform:scale(.9);
+    box-shadow: 0 0 0 0 rgba(#5a99d4,0);
+  }
+}
+
+.custom-button {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  border-radius: 50%;
+  background: #a7c957;
+  box-shadow: 0 0 0 0 rgba(#6a994e, 0.5);
+  animation: pulse 1.5s infinite;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  font-family: inherit;
+  letter-spacing: inherit;
+  cursor: pointer;
+}
+.custom-button:hover{
+  animation:none;
+}
+@keyframes pulse{
+  0%{
+    transform: scale(.9);
+  }
+  70%{
+    transform: scale(1);
+    box-shadow: 0 0 0 50px rgba(#5a99d4,0);
+  }
+  100%{
+    transform:scale(.9);
+    box-shadow: 0 0 0 0 rgba(#5a99d4,0);
+  }
+}
+
+.error_text{
+  display: block;
+  margin: 10px auto;
+  color: red;
+  text-align: center;
+  visibility: hidden;
+}
+
+.button-new-game{
+  border:none;
+  border-radius:  1.5em;
+  padding: 0.5em 0.1em;
+  background-color:var(--primary-color);
+  color:white;
+  font-size: 1em;
+  font-family: inherit;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin: 20px auto;
+  display: block;
+  padding: 10px;
+}
+#first_div{
+  padding: 0 15vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.button-new-game:active{
+position: relative;
+bottom: -8px;
+right: -8px;
+filter: drop-shadow(0px 0px 0px #242424);
+background-color:#e0e0e0;
+}
+.button-new-game:hover{
+  opacity: 0.8;
+}
+
+@media screen and(max-width:1200px){
+  .custom-made,
+  .custom-button,
+  .custom-made-button,
+  .custom-made1,
+    #first_div{
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items:center;
+    }
+}
+  
+  
+
+@media screen and (max-width:958px){
+  .custom-made,
+  .custom-button,
+  .custom-made-button,
+  .custom-made1,
+    #second_name_button{
+      flex-direction: column;
+      align-items:center;
+    }
+  #congrats, #score{
+    margin-bottom: 20px;
+    text-wrap: balance;
+  }
+}
+#first_name_count{
+  display: flex;
+  flex-wrap: wrap;
+}
+#second_name_count{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 760px){
+  .custom-made,
+  .custom-button,
+  .custom-made-button,
+  .custom-made1{
+    font-weight: 200;
+    font-style: normal;
+    display: flex;
+    flex-wrap: wrap;
+    
+  
+  }
+  #second_name_error{
+    text-align: center;
+  }
+  #first_name_button
+  #second_name_button{
+    height: auto;
+  }
+  #first_div{
+    flex-direction: column;
+  }
+}
